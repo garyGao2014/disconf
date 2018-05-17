@@ -334,7 +334,7 @@
 
     </dependencies>
 
-    <!-- build -->
+    <!-- build.sh -->
     <build>
         <defaultGoal>package</defaultGoal>
         <finalName>${project.artifactId}</finalName>

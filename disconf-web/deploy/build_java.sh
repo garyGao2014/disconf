@@ -10,7 +10,7 @@ if [ $# -le 0 ];then
         echo "use online profile"
         echo "**********************************************"
         mvn clean
-        mvn package install -Dmaven.test.skip=true -Ponline -U
+        mvn package install -Dmaven.test.skip=true -Dmaven.javadoc.skip=true -Ponline -U
 else
 	
 	if [ "$1" == "rd" ];then		
@@ -18,7 +18,7 @@ else
         echo "use default profile(RD)"
         echo "**********************************************"
         mvn clean
-        mvn package install -Dmaven.test.skip=true  -U
+        mvn package install -Dmaven.test.skip=true -Dmaven.javadoc.skip=true -U
 	else
         echo "**********************************************"
         echo "use the following as profile"
